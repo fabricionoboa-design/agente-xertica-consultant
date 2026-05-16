@@ -109,7 +109,7 @@ Tono y Estilo:
 Consultivo, inspirador y altamente profesional. Evita generalidades, sé extremadamente específico sobre la empresa investigada.`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-1.5-flash',
+        model: 'gemini-3-flash-preview',
         contents: prompt,
         config: {
           tools: [{ googleSearch: {} }],
@@ -180,7 +180,7 @@ Presentarás la respuesta con la siguiente estructura exacta:
 (Ej. Bajo uso de licencias basado en adopción, "Salud de la cuenta", o alertas rojas/Semaforo detectadas)`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-1.5-flash',
+        model: 'gemini-3-flash-preview',
         contents: prompt,
       });
 
